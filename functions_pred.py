@@ -31,8 +31,8 @@ date = datetime.today().strftime('%Y-%m-%d')
 
 def load_ml_model():
   blob = bucket.blob('model/ml/xgb-base.pkl')
-  blob.download_to_filename('/content/loaded-xgb.pkl')
-  loaded_file = open('/content/loaded-xgb.pkl', 'rb')
+  blob.download_to_filename('/loaded-xgb.pkl')
+  loaded_file = open('/loaded-xgb.pkl', 'rb')
   model = pickle.load(loaded_file)
   return model
 
@@ -46,8 +46,8 @@ def load_prediction_data():
 
 def load_vectorizer():
   blob = bucket.blob('model/cv/cv.pkl')
-  blob.download_to_filename('/content/cv.pkl')
-  loaded_file = open('/content/cv.pkl', 'rb')
+  blob.download_to_filename('/cv.pkl')
+  loaded_file = open('/cv.pkl', 'rb')
   cv = pickle.load(loaded_file)
   return cv
 
