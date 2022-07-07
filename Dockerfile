@@ -10,5 +10,6 @@ COPY . ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y libaio1
+RUN apt-get update && apt-get install -y gcc
 
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
