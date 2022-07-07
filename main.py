@@ -5,7 +5,7 @@ from functions_pred import load_ml_model, load_prediction_data, load_vectorizer,
 from datetime import datetime
 from google.cloud import bigquery
 from flask import Flask
-
+date = datetime.today().strftime('%Y-%m-%d')
 app = Flask(__name__)
 
 @app.route("/")
