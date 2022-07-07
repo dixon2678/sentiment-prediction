@@ -19,6 +19,7 @@ def el_job():
     path = 'prediction' + date + '.csv'
     df.to_csv(path)
     upload_to_gcs(path)
+    return "Prediction complete"
   
 # Main
 if __name__ == "__main__":
