@@ -121,8 +121,6 @@ webencodings==0.5.1
 widgetsnbextension==3.5.2
 zipp==3.6.0
 xgboost==0.90
-sklearn==0.0
-sklearn-pandas==1.8.0
 scikit-image==0.18.3
 scikit-learn==1.0.2
 scipy==1.4.1
