@@ -16,6 +16,7 @@ charset-normalizer==2.0.8
 click==8.0.3
 cramjam==2.5.0
 cryptography==3.4.8
+db-dtypes
 debugpy==1.5.1
 decorator==5.1.0
 defusedxml==0.7.1
