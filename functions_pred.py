@@ -15,6 +15,7 @@ from google.cloud import bigquery
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.sentiment import SentimentIntensityAnalyzer
 from datetime import datetime
+import json
 from nltk.stem.porter import *
 nltk.download('punkt')
 nltk.download('vader_lexicon')
