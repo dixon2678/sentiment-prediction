@@ -21,7 +21,7 @@ nltk.download('punkt')
 nltk.download('vader_lexicon')
 nltk.download('stopwords')
 import string
-
+date = datetime.today().strftime('%Y-%m-%d')
 gcp_json_credentials_dict = json.loads(os.environ['creds'])
 credentials = service_account.Credentials.from_service_account_info(gcp_json_credentials_dict)
 client = storage.Client(credentials=credentials, project='final-347314')
